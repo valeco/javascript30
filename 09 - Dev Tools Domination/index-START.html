@@ -18,28 +18,65 @@
     }
 
     // Regular
+    console.log('hola');
 
     // Interpolated
+    const miau = 'miau!';
+
+    console.log('Pato pato %s', 'cuac!');
+    console.log(`Gato gato ${miau}`);
 
     // Styled
+    console.log('%c Rompé con cuidado.', 'font-family: sans-serif; font-size: 1.2em; color: steelblue; font-weight: bold;');
 
     // warning!
+    console.warn('Ojito! La consola no es pa\' cualquiera...');
 
     // Error :|
+    console.error('Se pudrió todo! Corré antes de que se enteren!');
 
     // Info
+    console.info('Acá apareciería algo que probablemente ya sabías.');
 
     // Testing
+    console.assert(2 + 2 == 5, 'Por ahora la matemática no ha cambiado...');
 
     // clearing
+    console.clear();
 
     // Viewing DOM Elements
+    const p = document.querySelector('p');
+
+    console.dir(p);
 
     // Grouping together
+    console.group('Valentín');
+    console.log('Apellido: Costa');
+    console.log('Edad: 22');
+    console.groupEnd('Valentín');
+
+    console.groupCollapsed('Spoiler');
+    console.log('El Titanic se hunde.');
+    console.groupEnd('Spoiler');
 
     // counting
+    console.count(2);
+    console.count('jejo');
+    console.count('jejo');
+    console.count('caca');
+    console.count('jejo');
+    console.count('jejo');
+    console.count(2);
+    console.count('caca');
+    console.count('jejo');
 
     // timing
+    console.time('Tardó en escribir mi nombre');
+    console.log('Valentín Costa');
+    console.timeEnd('Tardó en escribir mi nombre');
+
+    // table
+    console.table(dogs);
 
   </script>
 </body>
